@@ -1,9 +1,9 @@
-<html>
-<head>
-    <title>about</title>
-</head>
-
-<body>
+{% extends 'rango/base.html' %}
+{% load staticfiles %}
+{% block title %}
+{{ category_name }}
+{% endblock %}
+{% block body_block %}
     <h1>This tutorial has been put together by Mashael</h1>
 	<div> 
 	<a href ="/rango/"> Index <br>
@@ -11,6 +11,4 @@
 
 			</div>
 	
-	
-</body>
-</html>
+{% endblock %}
